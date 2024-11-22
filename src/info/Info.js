@@ -52,7 +52,7 @@ export const info = {
             label: 'linkedin'
         },
         {
-            link: "",
+            link: "https://drive.google.com/file/d/1DSgbAKHdcLlAODjC2rUChiJKQY7w__9u/view?usp=sharing",
             icon: "fa fa-file-text",
             label: 'resume'
         },
