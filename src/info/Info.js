@@ -6,30 +6,34 @@ import flow from "../img/flow.png"
 import captionify from "../img/captionify.png"
 import safesteps from "../img/safesteps.png"
 import mindmate from "../img/mindmate.png"
+import hand from "../img/hand.png"
+import prega from "../img/prega.png"
+import jancare from "../img/jancare.png"
+import myntra from "../img/myntra.png"
 
 export let colors = ["rgb(241, 228, 53)", "rgb(251, 21, 238)"];
 
 export const info = {
     firstName: "Shriya",
     lastName: "Sandilya",
-    initials: "soctopus",
+    initials: "ss",
     position: "a Computer Science enthusaist",
     selfPortrait: self, 
     gradient: `-webkit-linear-gradient(135deg, ${colors})`, 
     baseColor: colors[1],
     secColor: colors[0],
     miniBio: [
-        {
-            emoji: '👩‍💻',
-            text: 'fueled by code'
-        },
+        // {
+        //     emoji: '👩‍💻',
+        //     text: 'fueled by code'
+        // },
         {
             emoji: '🌎',
             text: 'based in delhi'
         },
         {
-            emoji: "💼",
-            text: "Computer Science Engineering with specialisation in AI"
+            emoji: "🎓",
+            text: "B.Tech CSE-AI"
         },
         {
             emoji: "📧",
@@ -53,11 +57,11 @@ export const info = {
             label: 'resume'
         },
     ],
-    bio: "Hello! I'm Shriya Sandilya. I'm a CSE-AI Engineering student. I am currently studying at IDTUW, Delhi. ",
+    bio: "Hello! I'm Shriya Sandilya. I am studying Computer Science Engineering with specialisation in AI from IGDTUW, Delhi. ",
     skills:
         {
-            proficientWith: ['javascript', 'react', 'git', 'github', 'bootstrap', 'html5', 'css3', 'figma'],
-            exposedTo: ['nodejs', 'python', 'adobe illustrator']
+            libraries: ['pandas', 'NumPy', 'Matplotlib', 'pygame', 'Tensorflow', 'PyTorch', 'Pillow', 'SHAP', 'Lime', 'fingerpose'],
+            devTools: [ 'Git', 'Vercel', 'Google Cloud Platform', 'VS Code', 'Fusion 360', 'Figma', 'Spline', 'Tableau']
         }
     ,
     hobbies: [
@@ -66,17 +70,13 @@ export const info = {
             emoji: '📖'
         },
         {
-            label: 'theater',
+            label: 'debate',
             emoji: '🎭'
         },
         {
             label: 'movies',
             emoji: '🎥'
         },
-        {
-            label: 'cooking',
-            emoji: '🌶'
-        }
     ],
     experiences: [
         {
@@ -130,24 +130,22 @@ export const info = {
             emoji: '🧬',
         },
         {
-            position: 'Finalist',
-            org:'Avant Garde, IIM Indore',
+            achieve: 'Finalist',
+            loc:'Avant Garde, IIM Indore',
             description: 'Developed a business idea and plan for MakhMaid, a Makhana drinks powder company, that qualifed in top 20 teams for offline finals out of 1400+ teams',
             emoji: '💼',
         },
         {
-            position: 'Head Coordinator',
-            org:'AI Club',
-            description: 'Headed the creation and deployment of the AI Club’s Events and Landing Page, ensuring a successful website launch with 100 visitors',
-            emoji: '🚀',
-            link:'https://www.aiclub-igdtuw.tech/'
+            achieve: 'Research Group Member',
+            loc:'Misahub',
+            description: 'Learned research skills, ML and CV applications and contributed to 2 projects as part of a research group working on Medical Imaging and Signal Analysis Problems',
+            emoji: '🩺',
         },
         {
-            position: 'Monitoring and Coordination',
-            org:'Centre for Sustainable Development',
-            description: ' Organized and documented 4+ events promoting UN SDG Goal 16, driving awareness and impactful action for Peace, Justice, and Strong Institutions',
-            emoji: '🏛️',
-            link:'https://www.instagram.com/pejas_csd/'
+            achieve: 'Judge\'s Award',
+            loc:'Vex Robotics World Championship, Louisville, Kentucky',
+            description: 'Won the Judge’s Award at the VEX Robotics World Championship out of 200+ teams, following victory in the Thailand Skills Challenge',
+            emoji: '🤖',
         },
     ],
     port: [ 
@@ -180,11 +178,39 @@ export const info = {
             image: safesteps
         },
         {
+            title: "Hand Gesture Detector",
+            description: 'React website that detects 16 different hand gestures through live Web Cam by employing TensorFlow Handpose model and Fingerpose.',
+            live: "https://gesture-recognition-navy.vercel.app/", 
+            source: "https://github.com/soctopus2327/gesture_recognition", 
+            image: hand
+        },
+        {
+            title: "PregaCare",
+            description: 'A site using ML to support rural maternal care by suggesting diet, vaccination calendar and mental and physical health checks',
+            live: "https://manishikagupta.github.io/PregaCare/", 
+            source: "https://github.com/ManishikaGupta/PregaCare", 
+            image: prega
+        },
+        {
             title: "MindMate",
             description: 'An AI Mental Health Companion Website that has a speak-aloud chatbot, daily journal entries, medication reminder system and emotion tracking.',
             live: "https://mindmate-frontend.vercel.app/",
             source: "https://github.com/soctopus2327/mindmate_frontend",
             image: mindmate
+        },
+        {
+            title: "GenAI Custom Designer",
+            description: 'Ideated and prototyped an app for personalized clothing designing by combining design elements from selected pieces.',
+            live: "disabled",
+            source: "https://github.com/soctopus2327/JanCare",
+            image: myntra
+        },
+        {
+            title: "JanCare",
+            description: 'An E-Governance site that allows citizens ot lodge complaints through BlockChain with an Upvote / Downvote feature and ML ChatBot.',
+            live: "https://jan-care.vercel.app/",
+            source: "https://github.com/soctopus2327/Gen-AI-Custom-Designer",
+            image: jancare
         },
         {
             title: "Amazon Clone",

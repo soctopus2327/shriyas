@@ -125,16 +125,6 @@
     font-family: "Courier New", Courier, monospace;
     padding: 1rem;
 
-    .heading {
-        h3 {
-            color: yellow;
-            font-size: 1.5rem;
-    
-            span {
-                color: white; 
-            }
-        }
-    }
 
     .header {
         display: flex;
@@ -163,7 +153,67 @@
             span {
                 display: block;
                 margin-bottom: 0.5rem;
-                font-size: 1.2rem;
+                font-size: 1rem;
+            }
+
+            .barContainer {
+                background-color: #444;
+                border-radius: 0.25rem;
+                height: 1rem;
+                overflow: hidden;
+
+                .bar {
+                    background-color: #1dbf73;
+                    height: 80%;
+                    width: 0%;
+                    transition: width 1s ease-in-out; /* Smooth animation */
+                }
+            }
+        }
+    }
+}
+
+
+@import "../../variables.modules";
+
+.terminalSlide {
+    width: 50%;
+    margin: auto auto 4rem auto;
+    background-color: #27242f;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: $white;
+    font-family: "Courier New", Courier, monospace;
+    padding: 1rem;
+
+    .header {
+        display: flex;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        background-color: #8c8c8c;
+        border-radius: 0.5rem 0.5rem 0 0;
+        margin-top: 0%;
+
+        .red, .amber, .green {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+        }
+        .red { background-color: #ff5f56; }
+        .amber { background-color: #ffbd2e; }
+        .green { background-color: #27c93f; }
+    }
+
+    .content {
+        padding: 2rem;
+
+        .skill {
+            margin-bottom: 1rem;
+
+            span {
+                display: block;
+                margin-bottom: 0.5rem;
+                font-size: 1rem;
             }
 
             .barContainer {
@@ -183,4 +233,41 @@
     }
 }
 
+@media (max-width: 768px) {
+    .terminalSlide {
+        width: 90%; /* Adjust width for small screens */
+        padding: 0.8rem; /* Reduce padding for smaller devices */
+    }
 
+    .header {
+        flex-direction: column; /* Stack the status lights vertically */
+        align-items: center;
+    }
+
+    .content {
+        padding: 1.5rem; /* Reduce padding inside content */
+    }
+
+    .skill {
+        .barContainer {
+            height: 0.8rem; /* Adjust bar height for smaller screens */
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .terminalSlide {
+        width: 100%; /* Full width for very small screens */
+        margin-bottom: 2rem; /* Reduce bottom margin */
+    }
+
+    .content {
+        padding: 1rem; /* Even more reduced padding */
+    }
+
+    .skill {
+        .barContainer {
+            height: 0.6rem; /* Adjust bar height further */
+        }
+    }
+}

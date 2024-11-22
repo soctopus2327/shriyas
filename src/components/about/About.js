@@ -67,15 +67,15 @@ export default function About({innerRef}) {
         return <>
             <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd skills/tools
             </p>
-            <p><span style={{color: info.baseColor}}>skills/tools <span
+            <p><span style={{color: info.secColor}}>Other Tools <span
                 className={Style.green}>(main)</span> $</span> ls</p>
-            <p style={{color: info.baseColor}}> Proficient With</p>
-            <ul className={Style.skills}>
-                {info.skills.proficientWith.map((proficiency, index) => <li key={index}>{proficiency}</li>)}
+            <p style={{color: '#FFBD2E'}}> Libraries</p>
+            <ul className={Style.skills} style={{fontSize:'1.3rem', margin:'1rem'}}>
+                {info.skills.libraries.map((proficiency, index) => <li key={index}>{proficiency}</li>)}
             </ul>
-            <p style={{color: info.baseColor}}> Exposed To</p>
-            <ul className={Style.skills}>
-                {info.skills.exposedTo.map((skill, index) => <li key={index}>{skill}</li>)}
+            <p style={{color: '#FFBD2E'}}> Developer Tools</p>
+            <ul className={Style.skills} style={{fontSize:'1.3rem', margin:'1rem'}}>
+                {info.skills.devTools.map((skill, index) => <li key={index}>{skill}</li>)}
             </ul>
         </>;
     }
@@ -84,7 +84,7 @@ export default function About({innerRef}) {
         return <>
             <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
                 hobbies/interests</p>
-            <p><span style={{color: info.baseColor}}>hobbies/interests <span
+            <p><span style={{color: info.secColor}}>Hobbies and Interests <span
                 className={Style.green}>(main)</span> $</span> ls</p>
             <ul>
                 {info.hobbies.map((hobby, index) => (
@@ -106,7 +106,7 @@ export default function About({innerRef}) {
                         <Box component={'span'} mr={'1rem'}>{positions.emoji}  {positions.position}   <a href={positions.link}>🔗</a></Box>
                         <br></br>
                         <div style={{color:'#FFBD2E'}}>{positions.org}</div>
-                        <div style={{color:'grey', fontSize:'0.8rem', marginBottom:'0.5rem'}}>{positions.description}</div>
+                        <div style={{color:'grey', fontSize:'1rem', marginBottom:'0.5rem'}}>{positions.description}</div>
                     </li>
                 ))}
             </ul>
@@ -116,16 +116,16 @@ export default function About({innerRef}) {
     function achievements() {
         return <>
             <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
-                positions/leadership</p>
-            <p><span style={{color: info.secColor}}>Positions of Leadership <span
+                achievements/extracurriculars</p>
+            <p><span style={{color: info.secColor}}>Achievments and ExtraCurriculars <span
                 className={Style.green}>(main)</span> $</span> ls</p>
             <ul>
-                {info.positions.map((positions, index) => (
+                {info.achievements.map((achievements, index) => (
                     <li key={index}>
-                        <Box component={'span'} mr={'1rem'}>{positions.emoji}  {positions.position}   <a href={positions.link}>🔗</a></Box>
+                        <Box component={'span'} mr={'1rem'}>{achievements.emoji}  {achievements.achieve}</Box>
                         <br></br>
-                        <div style={{color:'#FFBD2E'}}>{positions.org}</div>
-                        <div style={{color:'grey', fontSize:'0.8rem', marginBottom:'0.5rem'}}>{positions.description}</div>
+                        <div style={{color:'#FFBD2E'}}>{achievements.loc}</div>
+                        <div style={{color:'grey', fontSize:'1rem', marginBottom:'0.5rem'}}>{achievements.description}</div>
                     </li>
                 ))}
             </ul>
@@ -135,7 +135,7 @@ export default function About({innerRef}) {
     function experience(){
         return <>
             <p><span style={{color: info.baseColor}}>{firstName}{info.lastName.toLowerCase()} $</span> cd
-                expereinces</p>
+                expereiences</p>
             <p><span style={{color: info.secColor}}>Experiences <span
                 className={Style.green}>(main)</span> $</span> ls</p>
             <ul>
@@ -144,7 +144,7 @@ export default function About({innerRef}) {
                         <Box component={'span'} mr={'1rem'}>{experiences.emoji}  {experiences.company}   <a href={experiences.link}>🔗</a></Box>
                         <br></br>
                         <div style={{color:'#FFBD2E'}}>{experiences.label}</div>
-                        <div style={{color:'grey', fontSize:'0.8rem'}}>{experiences.description}</div>
+                        <div style={{color:'grey', fontSize:'1rem'}}>{experiences.description}</div>
                     </li>
                 ))}
             </ul>
@@ -162,8 +162,8 @@ export default function About({innerRef}) {
             <Terminal text={experience()}/>
             <Portfolio text={port()}/>
             <br></br>
-            <Terminal text={skillsText()}/>
             <TerminalSlide />
+            <Terminal text={skillsText()}/>
             <Terminal text={positions()}/>
             <Terminal text={achievements()}/>
             <Terminal text={miscText()}/>
