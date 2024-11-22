@@ -10,6 +10,9 @@ import hand from "../img/hand.png"
 import prega from "../img/prega.png"
 import jancare from "../img/jancare.png"
 import myntra from "../img/myntra.png"
+import social from "../img/social.png"
+import eco from "../img/eco.png"
+
 
 export let colors = ["rgb(241, 228, 53)", "rgb(251, 21, 238)"];
 
@@ -171,18 +174,11 @@ export const info = {
             image: captionify
         },
         {
-            title: "SafeSteps",
-            description: 'A website using BingMaps API to visually highlight safety levels for safe travelling. Includes a real-time story submission feature, enabling instant updates to the website.',
-            live: "https://soctopus2327.github.io/SafeSteps/",
-            source: "https://github.com/soctopus2327/SafeSteps",
-            image: safesteps
-        },
-        {
-            title: "Hand Gesture Detector",
-            description: 'React website that detects 16 different hand gestures through live Web Cam by employing TensorFlow Handpose model and Fingerpose.',
-            live: "https://gesture-recognition-navy.vercel.app/", 
-            source: "https://github.com/soctopus2327/gesture_recognition", 
-            image: hand
+            title: "Social Messaging App",
+            description: 'A flutter application enabling user registration, login, and message posting with a minimalistic style front-end and Firebase Firestore',
+            live: "disabled",
+            source: "https://github.com/soctopus2327/social_messaging/blob/main/README.md",
+            image: social
         },
         {
             title: "PregaCare",
@@ -192,11 +188,32 @@ export const info = {
             image: prega
         },
         {
+            title: "Hand Gesture Detector",
+            description: 'React website that detects 16 different hand gestures through live Web Cam by employing TensorFlow Handpose model and Fingerpose.',
+            live: "https://gesture-recognition-navy.vercel.app/", 
+            source: "https://github.com/soctopus2327/gesture_recognition", 
+            image: hand
+        },
+        {
+            title: "SafeSteps",
+            description: 'A website using BingMaps API to visually highlight safety levels for safe travelling. Includes a real-time story submission feature, enabling instant updates to the website.',
+            live: "https://soctopus2327.github.io/SafeSteps/",
+            source: "https://github.com/soctopus2327/SafeSteps",
+            image: safesteps
+        },
+        {
             title: "MindMate",
             description: 'An AI Mental Health Companion Website that has a speak-aloud chatbot, daily journal entries, medication reminder system and emotion tracking.',
             live: "https://mindmate-frontend.vercel.app/",
             source: "https://github.com/soctopus2327/mindmate_frontend",
             image: mindmate
+        },
+        {
+            title: "EcoSymphony",
+            description: 'A Streamlit app that employs that takes your location as input and employs gen-ai to generate music, images and a story based on the environmental status of that location.',
+            live: "https://huggingface.co/spaces/soctopus2327/EcoSymphony", 
+            source: "https://github.com/soctopus2327/EcoSymphony", 
+            image: eco
         },
         {
             title: "GenAI Custom Designer",
@@ -209,7 +226,7 @@ export const info = {
             title: "JanCare",
             description: 'An E-Governance site that allows citizens ot lodge complaints through BlockChain with an Upvote / Downvote feature and ML ChatBot.',
             live: "https://jan-care.vercel.app/",
-            source: "https://github.com/soctopus2327/Gen-AI-Custom-Designer",
+            source: "https://github.com/soctopus2327/Gen-AI-Custom-Designer ",
             image: jancare
         },
         {

@@ -103,7 +103,7 @@ export default function About({innerRef}) {
             <ul>
                 {info.positions.map((positions, index) => (
                     <li key={index}>
-                        <Box component={'span'} mr={'1rem'}>{positions.emoji}  {positions.position}   <a href={positions.link}>🔗</a></Box>
+                        <Box component={'span'} mr={'1rem'}>{positions.emoji}  {positions.position}   <a href={positions.link} target='_blank'>🔗</a></Box>
                         <br></br>
                         <div style={{color:'#FFBD2E'}}>{positions.org}</div>
                         <div style={{color:'grey', fontSize:'1rem', marginBottom:'0.5rem'}}>{positions.description}</div>
@@ -141,7 +141,7 @@ export default function About({innerRef}) {
             <ul>
                 {info.experiences.map((experiences, index) => (
                     <li key={index}>
-                        <Box component={'span'} mr={'1rem'}>{experiences.emoji}  {experiences.company}   <a href={experiences.link}>🔗</a></Box>
+                        <Box component={'span'} mr={'1rem'}>{experiences.emoji}  {experiences.company}</Box>
                         <br></br>
                         <div style={{color:'#FFBD2E'}}>{experiences.label}</div>
                         <div style={{color:'grey', fontSize:'1rem'}}>{experiences.description}</div>
