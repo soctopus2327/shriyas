@@ -56,7 +56,7 @@ export const info = {
             label: 'linkedin'
         },
         {
-            link: "https://drive.google.com/file/d/1DSgbAKHdcLlAODjC2rUChiJKQY7w__9u/view?usp=sharing",
+            link: "https://drive.google.com/file/d/1uqQ9yLYXYfNzD0L-J-mcJQlfGTZFymBi/view?usp=drive_link",
             icon: "fa fa-file-text",
             label: 'resume'
         },
@@ -85,7 +85,7 @@ export const info = {
     experiences: [
         {
             label: 'Associate Software Developer Intern',
-            company:'Googler',
+            company:'Google',
             description: 'Enhanced features in BigQuery Connected Sheets by contributing to backend and frontend infrastructure improvements using Java and Javascript,refining user experience for 1,000,000+ enterprise users',
             emoji: '📄',
         },
