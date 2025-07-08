@@ -12,6 +12,7 @@ import jancare from "../img/jancare.png"
 import myntra from "../img/myntra.png"
 import social from "../img/social.png"
 import eco from "../img/eco.png"
+import scrabble from "../img/scrabble.png"
 
 
 export let colors = ["rgb(241, 228, 53)", "rgb(251, 21, 238)"];
@@ -83,6 +84,12 @@ export const info = {
     ],
     experiences: [
         {
+            label: 'Associate Software Developer Intern',
+            company:'Googler',
+            description: 'Enhanced features in BigQuery Connected Sheets by contributing to backend and frontend infrastructure improvements using Java and Javascript,refining user experience for 1,000,000+ enterprise users',
+            emoji: '📄',
+        },
+        {
             label: 'Product and Development Department Intern',
             company:'Avishkaar',
             description: 'Worked on offline saving in AMS using IndexedDB. Enabled offline program creation, saving, deletion. Also conducted thorough testing and reported 10 issues',
@@ -111,7 +118,7 @@ export const info = {
             link:'https://www.instagram.com/leanin.igdtuw/?hl=en'
         },
         {
-            position: 'Head Coordinator',
+            position: 'Technical Head',
             org:'AI Club',
             description: 'Headed the creation and deployment of the AI Club’s Events and Landing Page, ensuring a successful website launch with 100 visitors',
             emoji: '🚀',
@@ -126,6 +133,12 @@ export const info = {
         },
     ],
     achievements: [
+        {
+            achieve: 'Best Paper Award',
+            loc:'International Conference on Innovative Computing and Communication - 2025',
+            description: 'Received Best Paper Award out of 100+ papers submitted for presenting research paper on ”Accessibility in Image Captioning: A comparative study of ViT-GPT2, BLIP and GIT-Base Models” at the ICICC 2025 Conference',
+            emoji: '📷',
+        },
         {
             achieve: 'Best Idea Award',
             loc:'Tech-Bio Ideathon, IISC Banglore',
@@ -165,7 +178,14 @@ export const info = {
             image: flow
         },
     ],
-    portfolio: [ 
+    portfolio: [
+        {
+            title: "Scrabble",
+            description: 'Web application built using Phoenix Framework in Elixir for an online multi-player Scrabble game.',
+            live: "disabled", 
+            source: "https://github.com/soctopus2327/scrabble", 
+            image: scrabble
+        },
         {
             title: "Captionify",
             description: 'Android application using Flutter that gives descriptions for uploaded images using 3 ML models with Text-To-Speech feature to read the descriptions outloud',
